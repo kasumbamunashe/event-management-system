@@ -11,6 +11,7 @@
 	<groupId>com.jimmy.zw</groupId>
 	<artifactId>event-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>event-management</name>
 	<description>event management app </description>
 	<url/>
@@ -20,6 +21,12 @@
 	<developers>
 		<developer/>
 	</developers>
+	<modules>
+		<module>app</module>
+		<module>domain</module>
+		<module>service</module>
+		<module>api</module>
+	</modules>
 	<scm>
 		<connection/>
 		<developerConnection/>
