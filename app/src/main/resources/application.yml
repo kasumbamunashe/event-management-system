@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: event-manager
+  datasource:
+    url: jdbc:postgresql://localhost:5432/event-manager
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: "Munashe056"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
