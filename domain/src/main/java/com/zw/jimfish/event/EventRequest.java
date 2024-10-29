@@ -1,5 +1,6 @@
 package com.zw.jimfish.event;
 
+import com.zw.jimfish.enums.Status;
 import com.zw.jimfish.user.User;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
@@ -18,8 +19,7 @@ import java.util.List;
 public class EventRequest {
     private String name;
     private String description;
-    private String location; // Use for Google Maps integration
+    private String location;
     private LocalDateTime eventDateTime;
-    private User organizer;
-    private List<User> attendees;
+    private Status status;
 }

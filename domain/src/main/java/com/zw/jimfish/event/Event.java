@@ -1,6 +1,7 @@
 package com.zw.jimfish.event;
 
 import com.zw.jimfish.embedables.Audit;
+import com.zw.jimfish.enums.Status;
 import com.zw.jimfish.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -24,10 +25,11 @@ public class Event {
     private String description;
     private String location; // Use for Google Maps integration
     private LocalDateTime eventDateTime;
-    @ManyToOne
-    private User organizer;
     @ManyToMany
     private List<User> attendees;
     @Embedded
     private Audit audit;
+    @Enumerated(EnumType.STRING)
+    private Status status;
+    private String notes;
 }

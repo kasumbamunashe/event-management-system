@@ -1,5 +1,6 @@
 package com.zw.jimfish.user;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface UserService {
@@ -11,5 +12,5 @@ public interface UserService {
 
     User getUser(Long id);
 
-    User getAll(String searchName, Pageable pageable);
+   Page <User> getAll(String name, Pageable pageable);
 }
